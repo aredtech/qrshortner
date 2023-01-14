@@ -43,6 +43,12 @@ INSTALLED_APPS = [
     'common'
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
+
 AUTH_USER_MODEL = "accounts.CustomUser"
 
 MIDDLEWARE = [
